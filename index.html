@@ -1,1 +1,30 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativity Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Relativity Visualizer</h1>
+    <div class="controls">
+      <label for="velocity">Velocity (% of speed of light):</label>
+      <input type="number" id="velocity" min="0" max="99" value="0">
+      <button id="update">Update</button>
+    </div>
+    <div class="visualization">
+      <div class="object" id="object">
+        <div class="clock" id="clock">Time: 1s</div>
+        <div class="length" id="length">Length: 1m</div>
+      </div>
+    </div>
+    <div class="info">
+      <p id="time-dilation">Time Dilation Factor (γ): 1.00</p>
+      <p id="length-contraction">Length Contraction Factor: 1.00</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
